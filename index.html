@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive 1-hour session introducing Robotics, Mechatronics, and IoT technologies. Learn about the future of automation and smart systems.">
+    <meta name="keywords" content="robotics, mechatronics, IoT, automation, smart devices, engineering, technology">
+    <meta name="author" content="Tech Education">
+    
+    <title>The Future is Now: Introduction to Robotics, Mechatronics & IoT</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="The Future is Now: Robotics, Mechatronics & IoT">
+    <meta property="og:description" content="Interactive learning session about the technologies shaping our future">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Future is Now: Robotics, Mechatronics & IoT">
+    <meta name="twitter:description" content="Interactive learning session about the technologies shaping our future">
+</head>
+<body>
+    <!-- Progress Indicator -->
+    <div class="progress-indicator">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    🤖 MECH-X
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#welcome" class="nav-link active">Welcome</a></li>
+                    <li><a href="#robotics" class="nav-link">Robotics</a></li>
+                    <li><a href="#mechatronics" class="nav-link">Mechatronics</a></li>
+                    <li><a href="#iot" class="nav-link">IoT</a></li>
+                    <li><a href="#synergy" class="nav-link">Integration</a></li>
+                    <li><a href="#getting-started" class="nav-link">Build</a></li>
+                    <li><a href="#career" class="nav-link">Career</a></li>
+                    <li><a href="#career-highlights" class="nav-link">Highlights</a></li>
+                </ul>
+                
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="welcome" class="hero section">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1 class="hero-title">
+                        The Future is <span class="typing-effect">Now</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        An Interactive Journey Through Robotics, Mechatronics, and IoT
+                    </p>
+                    <p class="hero-subtitle" style="font-size: 1rem; margin-bottom: 3rem;">
+                        From the smartphone in your pocket to the smart cities around us, 
+                        discover the three pillars transforming our world in this comprehensive 1-hour session.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#robotics" class="btn btn-primary">Start Learning 🚀</a>
+                        <a href="#poll" class="btn btn-outline">Quick Poll 📊</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Poll Section -->
+        <section id="poll" class="section" style="padding: 3rem 0; background: white;">
+            <div class="container">
+                <div class="poll-card">
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem;">
+                        🤔 Let's Start With a Question
+                    </h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">
+                        How many "smart" or connected devices do you think you interact with daily?
+                    </p>
+                    
+                    <div class="poll-options">
+                        <div class="poll-option" data-value="1-5">1-5 devices</div>
+                        <div class="poll-option" data-value="6-10">6-10 devices</div>
+                        <div class="poll-option" data-value="11-15">11-15 devices</div>
+                        <div class="poll-option" data-value="16+">16+ devices</div>
+                    </div>
+                    
+                    <div class="poll-result">
+                        <!-- Results will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Robotics Section -->
+        <section id="robotics" class="robotics section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Module 1</div>
+                    <h2 class="section-title">Understanding Robotics</h2>
+                    <p class="section-description">
+                        Robots aren't just sci-fi fantasies anymore. They're sophisticated machines that 
+                        sense, think, and act. Let's explore what makes a machine "robotic" and see the 
+                        amazing variety of robots already working among us.
+                    </p>
+                </div>
+
+                <!-- Sense-Plan-Act Framework -->
+                <div class="sense-plan-act">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        The Universal Robot Framework: Sense → Plan → Act
+                    </h3>
+                    
+                    <div class="spa-flow">
+                        <div class="card fade-in">
+                            <div class="card-icon">👁️</div>
+                            <h4 class="card-title">1. SENSE</h4>
+                            <p class="card-description">
+                                Robots gather information about their environment using various sensors
+                            </p>
+                            <div class="card-example">
+                                <strong>Examples:</strong><br>
+                                • Cameras (vision)<br>
+                                • Microphones (sound)<br>
+                                • LIDAR (distance)<br>
+                                • GPS (location)<br>
+                                • Touch sensors
+                            </div>
+                        </div>
+                        
+                        <div class="spa-arrow">→</div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🧠</div>
+                            <h4 class="card-title">2. PLAN</h4>
+                            <p class="card-description">
+                                The robot's "brain" processes sensor data and decides what action to take
+                            </p>
+                            <div class="card-example">
+                                <strong>Examples:</strong><br>
+                                • Microprocessors<br>
+                                • AI algorithms<br>
+                                • Machine learning<br>
+                                • Pre-programmed logic<br>
+                                • Neural networks
+                            </div>
+                        </div>
+                        
+                        <div class="spa-arrow">→</div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🦾</div>
+                            <h4 class="card-title">3. ACT</h4>
+                            <p class="card-description">
+                                Physical actuators execute the planned action in the real world
+                            </p>
+                            <div class="card-example">
+                                <strong>Examples:</strong><br>
+                                • Electric motors<br>
+                                • Hydraulic systems<br>
+                                • Pneumatic actuators<br>
+                                • Speakers<br>
+                                • LED displays
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-World Examples -->
+                <div style="margin-top: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        Robots in Action Today
+                    </h3>
+                    
+                    <div class="grid grid-3">
+                        <div class="card fade-in">
+                            <div class="card-icon">🏭</div>
+                            <h4 class="card-title">Industrial Robots</h4>
+                            <p class="card-description">
+                                Precision manufacturing with superhuman speed, strength, and accuracy
+                            </p>
+                            <div class="card-example">
+                                Example: KUKA robotic arms assembling cars, performing 1000+ welds per day with millimeter precision
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🏠</div>
+                            <h4 class="card-title">Service Robots</h4>
+                            <p class="card-description">
+                                Helpful assistants making daily life easier and more convenient
+                            </p>
+                            <div class="card-example">
+                                Example: Roomba vacuum cleaners that map your home and clean autonomously while you're away
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🚁</div>
+                            <h4 class="card-title">Exploration Robots</h4>
+                            <p class="card-description">
+                                Brave explorers venturing where humans cannot safely go
+                            </p>
+                            <div class="card-example">
+                                Example: NASA's Perseverance rover discovering ancient water signs on Mars, operating 200+ million miles from Earth
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🚗</div>
+                            <h4 class="card-title">Autonomous Vehicles</h4>
+                            <p class="card-description">
+                                Self-driving cars revolutionizing transportation and logistics
+                            </p>
+                            <div class="card-example">
+                                Example: Waymo autonomous cars have driven over 20 million miles safely on public roads
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🏥</div>
+                            <h4 class="card-title">Medical Robots</h4>
+                            <p class="card-description">
+                                Precise surgical assistance saving lives and improving outcomes
+                            </p>
+                            <div class="card-example">
+                                Example: Da Vinci surgical robots enabling minimally invasive surgery with enhanced precision
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🌾</div>
+                            <h4 class="card-title">Agricultural Robots</h4>
+                            <p class="card-description">
+                                Smart farming for sustainable food production
+                            </p>
+                            <div class="card-example">
+                                Example: John Deere autonomous tractors planting crops with GPS precision, optimizing yields
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mechatronics Section -->
+        <section id="mechatronics" class="mechatronics section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Module 2</div>
+                    <h2 class="section-title">Mechatronics: The Integration Science</h2>
+                    <p class="section-description">
+                        What transforms a simple machine into a smart one? Mechatronics is the magic that 
+                        blends mechanical, electrical, software, and control engineering into unified systems 
+                        that are greater than the sum of their parts.
+                    </p>
+                </div>
+
+                <!-- Mechatronics Diagram -->
+                <div class="mechatronics-diagram">
+                    <div class="mechatronics-center">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Mechatronics</h4>
+                        <p style="font-size: 0.9rem; margin: 0; color: var(--text-secondary);">Unified System</p>
+                    </div>
+                    
+                    <div class="mechatronics-circle circle-mechanical">
+                        <span>Mechanical<br>Engineering</span>
+                    </div>
+                    
+                    <div class="mechatronics-circle circle-electrical">
+                        <span>Electrical<br>Engineering</span>
+                    </div>
+                    
+                    <div class="mechatronics-circle circle-software">
+                        <span>Computer<br>Science</span>
+                    </div>
+                    
+                    <div class="mechatronics-circle circle-control">
+                        <span>Control<br>Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Field Explanations -->
+                <div class="grid grid-2" style="margin-top: 3rem;">
+                    <div class="card fade-in">
+                        <div class="card-icon" style="color: #3B82F6;">⚙️</div>
+                        <h4 class="card-title">Mechanical Engineering</h4>
+                        <p class="card-description">
+                            The physical foundation: gears, motors, structures, and mechanical systems that provide movement and force
+                        </p>
+                        <div class="card-example">
+                            In a robot: chassis, joints, wheels, grippers, mechanical actuators
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon" style="color: #EF4444;">⚡</div>
+                        <h4 class="card-title">Electrical Engineering</h4>
+                        <p class="card-description">
+                            Power and circuits: batteries, sensors, motor controllers, and electronic components that enable operation
+                        </p>
+                        <div class="card-example">
+                            In a robot: power systems, sensor circuits, motor drivers, communication modules
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon" style="color: #10B981;">💻</div>
+                        <h4 class="card-title">Computer Science</h4>
+                        <p class="card-description">
+                            Intelligence and logic: programming, algorithms, AI, and software that gives systems their "brains"
+                        </p>
+                        <div class="card-example">
+                            In a robot: navigation software, decision algorithms, user interfaces, AI models
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon" style="color: #F59E0B;">🎛️</div>
+                        <h4 class="card-title">Control Engineering</h4>
+                        <p class="card-description">
+                            Coordination and feedback: systems that ensure precise, safe, and efficient operation of all components
+                        </p>
+                        <div class="card-example">
+                            In a robot: PID controllers, feedback loops, safety systems, motion planning
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-World Example -->
+                <div style="margin-top: 4rem; padding: 2rem; background: var(--bg-primary); border-radius: var(--radius-xl); border-left: 4px solid var(--primary-color);">
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem;">
+                        🎵 Real-World Example: Smart Speaker Evolution
+                    </h3>
+                    <div class="grid grid-2">
+                        <div>
+                            <h4 style="color: var(--text-secondary);">Traditional Record Player (1960s)</h4>
+                            <ul style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li>Purely mechanical system</li>
+                                <li>Manual operation only</li>
+                                <li>Limited functionality</li>
+                                <li>No intelligence or automation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color);">Modern Smart Speaker (Today)</h4>
+                            <ul style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li><strong>Mechanical:</strong> Speaker drivers, cooling fans</li>
+                                <li><strong>Electrical:</strong> Amplifiers, microphone arrays, power circuits</li>
+                                <li><strong>Software:</strong> Voice recognition AI, music streaming apps</li>
+                                <li><strong>Control:</strong> Audio processing, network management, user preferences</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-secondary);">
+                        Result: A device that understands speech, connects to the internet, learns your preferences, 
+                        and can control your entire smart home ecosystem!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IoT Section -->
+        <section id="iot" class="iot section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Module 3</div>
+                    <h2 class="section-title">Internet of Things (IoT): The Connectivity Revolution</h2>
+                    <p class="section-description">
+                        IoT transforms ordinary objects into intelligent, connected devices that can communicate, 
+                        share data, and coordinate actions. It's the nervous system connecting our digital and 
+                        physical worlds, creating smarter environments everywhere.
+                    </p>
+                </div>
+
+                <!-- IoT Flow Diagram -->
+                <div class="iot-flow">
+                    <div class="iot-step">
+                        <div class="card fade-in">
+                            <div class="card-icon">🌡️</div>
+                            <h4 class="card-title">1. Sensing</h4>
+                            <p class="card-description">
+                                Smart devices collect real-world data through sensors
+                            </p>
+                            <div class="card-example">
+                                Smart thermostat measures room temperature, humidity, occupancy
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="iot-arrow">→</div>
+                    
+                    <div class="iot-step">
+                        <div class="card fade-in">
+                            <div class="card-icon">📡</div>
+                            <h4 class="card-title">2. Connectivity</h4>
+                            <p class="card-description">
+                                Data travels to the cloud via internet connections
+                            </p>
+                            <div class="card-example">
+                                Wi-Fi, Bluetooth, Cellular, LoRaWAN, Zigbee protocols
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="iot-arrow">→</div>
+                    
+                    <div class="iot-step">
+                        <div class="card fade-in">
+                            <div class="card-icon">☁️</div>
+                            <h4 class="card-title">3. Processing</h4>
+                            <p class="card-description">
+                                Cloud systems analyze data and make intelligent decisions
+                            </p>
+                            <div class="card-example">
+                                AI algorithms, machine learning, data analytics, automation rules
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="iot-arrow">→</div>
+                    
+                    <div class="iot-step">
+                        <div class="card fade-in">
+                            <div class="card-icon">📱</div>
+                            <h4 class="card-title">4. User Interface</h4>
+                            <p class="card-description">
+                                Results delivered to users through apps and dashboards
+                            </p>
+                            <div class="card-example">
+                                Smartphone apps, web dashboards, voice assistants, notifications
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT Applications -->
+                <div style="margin-top: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        IoT Transforming Every Sector
+                    </h3>
+                    
+                    <div class="grid grid-3">
+                        <div class="card fade-in">
+                            <div class="card-icon">🏠</div>
+                            <h4 class="card-title">Smart Homes</h4>
+                            <p class="card-description">
+                                Automated, efficient, and secure living spaces that learn your preferences
+                            </p>
+                            <div class="card-example">
+                                <strong>Real Example:</strong> Google Nest systems save 10-15% on energy bills by learning family schedules and optimizing heating/cooling automatically
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🏙️</div>
+                            <h4 class="card-title">Smart Cities</h4>
+                            <p class="card-description">
+                                Urban infrastructure that responds intelligently to citizen needs
+                            </p>
+                            <div class="card-example">
+                                <strong>Real Example:</strong> Barcelona's smart city network saves €42.5M annually through intelligent water management and LED street lighting
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🏥</div>
+                            <h4 class="card-title">Healthcare IoT</h4>
+                            <p class="card-description">
+                                Remote monitoring and personalized care improving patient outcomes
+                            </p>
+                            <div class="card-example">
+                                <strong>Real Example:</strong> Apple Watch has detected over 1000 atrial fibrillation cases, potentially preventing strokes
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🚗</div>
+                            <h4 class="card-title">Connected Vehicles</h4>
+                            <p class="card-description">
+                                Cars that communicate with each other and infrastructure for safety
+                            </p>
+                            <div class="card-example">
+                                <strong>Real Example:</strong> Tesla's fleet learning enables over-the-air safety improvements affecting millions of vehicles simultaneously
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🌾</div>
+                            <h4 class="card-title">Precision Agriculture</h4>
+                            <p class="card-description">
+                                Data-driven farming for sustainable food production
+                            </p>
+                            <div class="card-example">
+                                <strong>Real Example:</strong> John Deere's precision agriculture increases crop yields by 15% while reducing water usage by 20%
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🏭</div>
+                            <h4 class="card-title">Industrial IoT</h4>
+                            <p class="card-description">
+                                Predictive maintenance and optimized manufacturing processes
+                            </p>
+                            <div class="card-example">
+                                <strong>Real Example:</strong> GE's Predix platform prevents unplanned downtime, saving billions in maintenance costs across industries
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT Statistics -->
+                <div style="margin-top: 4rem; padding: 2rem; background: var(--bg-gradient); border-radius: var(--radius-xl); color: white; text-align: center;">
+                    <h3 style="color: white; margin-bottom: 2rem;">IoT by the Numbers</h3>
+                    <div class="grid grid-3">
+                        <div>
+                            <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">30B</div>
+                            <p style="margin: 0; opacity: 0.9;">Connected devices expected by 2025</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">₹10,00,00,000 Cr</div>
+                            <p style="margin: 0; opacity: 0.9;">Economic value potential by 2030</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">175</div>
+                            <p style="margin: 0; opacity: 0.9;">Zettabytes of data generated annually</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integration/Synergy Section -->
+        <section id="synergy" class="case-study section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Module 4</div>
+                    <h2 class="section-title">The Power of Integration</h2>
+                    <p class="section-description">
+                        When Robotics, Mechatronics, and IoT work together, they create systems that are 
+                        truly transformational. Let's explore how their synergy is revolutionizing entire 
+                        industries and creating new possibilities.
+                    </p>
+                </div>
+
+                <!-- Case Study: Automated Warehouse -->
+                <div class="case-study-content">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        📦 Case Study: Amazon's Automated Warehouse
+                    </h3>
+                    <p style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary);">
+                        How 750,000+ robots work with humans to fulfill millions of orders daily
+                    </p>
+                    
+                    <div class="case-role">
+                        <div class="case-role-icon">🤖</div>
+                        <div class="case-role-content">
+                            <h4 style="color: var(--primary-color);">Robotics Component</h4>
+                            <p>
+                                <strong>Kiva robots (now Amazon Robotics)</strong> serve as the physical workforce. 
+                                These mobile robots can lift 750 pounds, navigate autonomously, and work 
+                                continuously for 16+ hours on a single charge.
+                            </p>
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                                <strong>Impact:</strong> Reduced order fulfillment time from 60-75 minutes to 15 minutes
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="case-role">
+                        <div class="case-role-icon">⚙️</div>
+                        <div class="case-role-content">
+                            <h4 style="color: var(--secondary-color);">Mechatronics Component</h4>
+                            <p>
+                                Each robot integrates precise mechanical systems (wheels, lifts), sophisticated 
+                                electrical components (motors, sensors, batteries), intelligent software 
+                                (navigation, task management), and advanced control systems (coordination, safety).
+                            </p>
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                                <strong>Result:</strong> 99.99% accuracy in warehouse operations with minimal human intervention
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="case-role">
+                        <div class="case-role-icon">🌐</div>
+                        <div class="case-role-content">
+                            <h4 style="color: var(--success-color);">IoT Component</h4>
+                            <p>
+                                The warehouse management system connects every robot, sensor, and workstation 
+                                in real-time. IoT sensors track inventory levels, predict maintenance needs, 
+                                monitor environmental conditions, and optimize traffic flow.
+                            </p>
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                                <strong>Achievement:</strong> Processes 1 million+ items daily with real-time visibility across the entire operation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Integration Examples -->
+                <div style="margin-top: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        Other Revolutionary Integrations
+                    </h3>
+                    
+                    <div class="grid grid-2">
+                        <div class="card fade-in">
+                            <div class="card-icon">🚗</div>
+                            <h4 class="card-title">Tesla Autopilot</h4>
+                            <p class="card-description">
+                                <strong>Robotics:</strong> Autonomous driving capabilities<br>
+                                <strong>Mechatronics:</strong> Integrated sensors, computers, and vehicle controls<br>
+                                <strong>IoT:</strong> Fleet learning and over-the-air updates
+                            </p>
+                            <div class="card-example">
+                                Result: 10x safety improvement over human drivers in highway conditions
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🏥</div>
+                            <h4 class="card-title">Da Vinci Surgical System</h4>
+                            <p class="card-description">
+                                <strong>Robotics:</strong> Precise surgical movements<br>
+                                <strong>Mechatronics:</strong> Haptic feedback and motion scaling<br>
+                                <strong>IoT:</strong> Remote operation and data sharing
+                            </p>
+                            <div class="card-example">
+                                Result: 95% reduction in surgical complications for certain procedures
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🌾</div>
+                            <h4 class="card-title">Smart Farm Systems</h4>
+                            <p class="card-description">
+                                <strong>Robotics:</strong> Autonomous tractors and harvesters<br>
+                                <strong>Mechatronics:</strong> Precision planting and spraying systems<br>
+                                <strong>IoT:</strong> Soil sensors and weather monitoring
+                            </p>
+                            <div class="card-example">
+                                Result: 40% increase in crop yields with 30% reduction in resource usage
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <div class="card-icon">🏭</div>
+                            <h4 class="card-title">Smart Manufacturing</h4>
+                            <p class="card-description">
+                                <strong>Robotics:</strong> Collaborative robots (cobots)<br>
+                                <strong>Mechatronics:</strong> Flexible production systems<br>
+                                <strong>IoT:</strong> Predictive maintenance and quality control
+                            </p>
+                            <div class="card-example">
+                                Result: 50% reduction in production time with 99.9% quality consistency
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section id="future" class="section fade-in" style="background: var(--bg-gradient); color: white;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle" style="color: rgba(255,255,255,0.8);">Looking Ahead</div>
+                    <h2 class="section-title" style="color: white;">The Future is Collaborative</h2>
+                    <p class="section-description" style="color: rgba(255,255,255,0.9);">
+                        As AI advances and 5G networks mature, the collaboration between humans and 
+                        intelligent systems will become even more seamless. These technologies aren't 
+                        just conveniences—they're essential tools for solving humanity's greatest challenges.
+                    </p>
+                </div>
+
+                <div class="grid grid-3" style="margin-top: 3rem;">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🌍</div>
+                        <h4 style="color: white; margin-bottom: 1rem;">Climate Solutions</h4>
+                        <p style="color: rgba(255,255,255,0.8);">
+                            Smart grids, autonomous renewable energy systems, and AI-optimized 
+                            carbon capture technologies
+                        </p>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🧬</div>
+                        <h4 style="color: white; margin-bottom: 1rem;">Medical Breakthroughs</h4>
+                        <p style="color: rgba(255,255,255,0.8);">
+                            Personalized medicine through IoT health monitoring, robotic surgery, 
+                            and AI-driven drug discovery
+                        </p>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+                        <h4 style="color: white; margin-bottom: 1rem;">Space Exploration</h4>
+                        <p style="color: rgba(255,255,255,0.8);">
+                            Autonomous spacecraft, Mars colonies with self-sustaining systems, 
+                            and asteroid mining operations
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: rgba(255,255,255,0.1); border-radius: var(--radius-xl);">
+                    <h3 style="color: white; margin-bottom: 1rem;">Ready to Be Part of This Future?</h3>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">
+                        Whether you're a student, professional, or curious learner, there's never been 
+                        a better time to explore these fields. The future needs diverse minds working 
+                        together to solve tomorrow's challenges.
+                    </p>
+                    
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="#getting-started" class="btn btn-primary">Start Building �</a>
+                        <a href="#career" class="btn btn-outline" style="color: white; border-color: white;">Career Guide 💼</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Hands-On Learning</div>
+                    <h2 class="section-title">Start Building Amazing Projects</h2>
+                    <p class="section-description">
+                        Ready to move from theory to practice? Here's your complete guide to choosing the right 
+                        hardware, starting your first projects, and building an impressive portfolio that 
+                        will land you your dream job.
+                    </p>
+                </div>
+
+                <!-- Hardware Platform Guide with Enhanced Details -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        🛠️ Hardware Platform Guide: Detailed Comparison & Selection
+                    </h3>
+                    
+                    <!-- Comparison Overview -->
+                    <div style="background: var(--bg-gradient); padding: 2rem; border-radius: var(--radius-xl); margin-bottom: 3rem; color: white; text-align: center;">
+                        <h4 style="color: white; margin-bottom: 1rem;">Arduino vs Raspberry Pi vs ESP32 vs Jetson Boards</h4>
+                        <p style="color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+                            Each platform serves different purposes: Arduino for real-time control, Raspberry Pi for IoT and AI, 
+                            ESP32 for wireless connectivity, and Jetson for advanced AI/robotics applications.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-3">
+                        <!-- Beginner Level - Enhanced -->
+                        <div class="card fade-in level-beginner" style="border-top: 4px solid;">
+                            <div class="card-icon" style="font-size: 2rem;">🟢</div>
+                            <h4 class="card-title" style="font-size: 1.4rem;">BEGINNER LEVEL (₹8,000-12,000)</h4>
+                            
+                            <div style="margin-bottom: 1.5rem; padding: 1rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid;" class="border-accent">
+                                <h5 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Arduino Uno R3 (₹2,000)</h5>
+                                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                    Perfect for learning basics - 16MHz, 32KB flash, 14 digital pins. Huge community support with 100,000+ tutorials.
+                                </p>
+                                <div class="card-example" style="background: #f0fdf4; padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem;">
+                                    <strong>Best for:</strong> LED control, sensor reading, servo motors, simple robotics
+                                </div>
+                                <div style="margin-top: 0.75rem; font-size: 0.9rem; color: #047857; font-weight: 500;">
+                                    <strong>Pros:</strong> Beginner-friendly, extensive libraries, plug-and-play
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem; padding: 1rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid;" class="border-accent">
+                                <h5 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Raspberry Pi 4 (₹6,000)</h5>
+                                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                    Quad-core ARM CPU, 4GB RAM, full Linux OS. Mini computer perfect for IoT and computer vision.
+                                </p>
+                                <div class="card-example" style="background: #f0fdf4; padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem;">
+                                    <strong>Best for:</strong> Home automation, web servers, AI projects, media centers
+                                </div>
+                                <div style="margin-top: 0.75rem; font-size: 0.9rem; color: #047857; font-weight: 500;">
+                                    <strong>Pros:</strong> Full OS, WiFi/Bluetooth built-in, GPIO pins, camera support
+                                </div>
+                            </div>
+                            
+                            <div style="background: #ecfdf5; padding: 1rem; border-radius: var(--radius-md); border: 1px solid #a7f3d0;">
+                                <h5 style="color: #047857; margin-bottom: 0.5rem; font-size: 1rem;">Essential Components:</h5>
+                                <ul style="margin-left: 1rem; font-size: 0.95rem; color: var(--text-primary); line-height: 1.5;">
+                                    <li>Breadboard + jumper wires</li>
+                                    <li>LEDs, resistors, sensors</li>
+                                    <li>Servo motors (SG90)</li>
+                                    <li>LCD display 16x2</li>
+                                    <li>Temperature & ultrasonic sensors</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Intermediate Level - Enhanced -->
+                        <div class="card fade-in" style="border-top: 4px solid #DC6317; background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); box-shadow: 0 8px 25px -5px rgba(220, 99, 23, 0.1);">
+                            <div class="card-icon" style="color: #DC6317; font-size: 2rem;">🟡</div>
+                            <h4 class="card-title" style="color: #DC6317; font-size: 1.4rem;">INTERMEDIATE LEVEL (₹16,000-24,000)</h4>
+                            
+                            <div style="margin-bottom: 1.5rem; padding: 1rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid #DC6317;">
+                                <h5 style="color: #DC6317; margin-bottom: 0.5rem; font-size: 1.1rem;">ESP32 DevKit (₹1,200)</h5>
+                                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                    240MHz dual-core, 520KB RAM, WiFi/Bluetooth. Low power consumption, perfect for IoT.
+                                </p>
+                                <div class="card-example" style="background: #fffbeb; padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem;">
+                                    <strong>Best for:</strong> Smart home devices, wireless sensors, mesh networks, BLE projects
+                                </div>
+                                <div style="margin-top: 0.75rem; font-size: 0.9rem; color: #B45309; font-weight: 500;">
+                                    <strong>Pros:</strong> Built-in WiFi/BT, low power, multiple protocols, Arduino compatible
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem; padding: 1rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid #DC6317;">
+                                <h5 style="color: #DC6317; margin-bottom: 0.5rem; font-size: 1.1rem;">Jetson Nano (₹12,000)</h5>
+                                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                    Quad-core ARM A57, 128-core Maxwell GPU, 4GB RAM. CUDA support for AI/ML acceleration.
+                                </p>
+                                <div class="card-example" style="background: #fffbeb; padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem;">
+                                    <strong>Best for:</strong> Computer vision, object detection, autonomous robots, edge AI
+                                </div>
+                                <div style="margin-top: 0.75rem; font-size: 0.9rem; color: #B45309; font-weight: 500;">
+                                    <strong>Pros:</strong> GPU acceleration, TensorRT, ROS support, multiple camera inputs
+                                </div>
+                            </div>
+                            
+                            <div style="background: #fef3c7; padding: 1rem; border-radius: var(--radius-md); border: 1px solid #fbbf24;">
+                                <h5 style="color: #B45309; margin-bottom: 0.5rem; font-size: 1rem;">Additional Components:</h5>
+                                <ul style="margin-left: 1rem; font-size: 0.95rem; color: var(--text-primary); line-height: 1.5;">
+                                    <li>Camera modules (OV5640, IMX219)</li>
+                                    <li>Stepper motors + drivers</li>
+                                    <li>Level shifters & voltage regulators</li>
+                                    <li>Wireless modules (LoRa, Zigbee)</li>
+                                    <li>3D printer filament (PLA/PETG)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Advanced Level - Enhanced -->
+                        <div class="card fade-in" style="border-top: 4px solid #DC2626; background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%); box-shadow: 0 8px 25px -5px rgba(220, 38, 38, 0.1);">
+                            <div class="card-icon" style="color: #DC2626; font-size: 2rem;">🔴</div>
+                            <h4 class="card-title" style="color: #DC2626; font-size: 1.4rem;">ADVANCED LEVEL (₹40,000+)</h4>
+                            
+                            <div style="margin-bottom: 1.5rem; padding: 1rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid #DC2626;">
+                                <h5 style="color: #DC2626; margin-bottom: 0.5rem; font-size: 1.1rem;">STM32 Nucleo (₹2,000)</h5>
+                                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                    ARM Cortex-M4, 180MHz, real-time capabilities. Professional embedded development platform.
+                                </p>
+                                <div class="card-example" style="background: #fef2f2; padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem;">
+                                    <strong>Best for:</strong> Motor control, real-time systems, industrial automation
+                                </div>
+                                <div style="margin-top: 0.75rem; font-size: 0.9rem; color: #B91C1C; font-weight: 500;">
+                                    <strong>Pros:</strong> Real-time OS, precise timing, industrial-grade, debugging tools
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem; padding: 1rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid #DC2626;">
+                                <h5 style="color: #DC2626; margin-bottom: 0.5rem; font-size: 1.1rem;">Jetson Xavier (₹72,000)</h5>
+                                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                    8-core Carmel ARM, 512-core Volta GPU, 32GB RAM. Industry-leading AI performance.
+                                </p>
+                                <div class="card-example" style="background: #fef2f2; padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem;">
+                                    <strong>Best for:</strong> Autonomous vehicles, industrial robots, edge AI deployment
+                                </div>
+                                <div style="margin-top: 0.75rem; font-size: 0.9rem; color: #B91C1C; font-weight: 500;">
+                                    <strong>Pros:</strong> 32 TOPS AI performance, multiple camera support, enterprise-ready
+                                </div>
+                            </div>
+                            
+                            <div style="background: #fecaca; padding: 1rem; border-radius: var(--radius-md); border: 1px solid #f87171;">
+                                <h5 style="color: #B91C1C; margin-bottom: 0.5rem; font-size: 1rem;">Professional Equipment:</h5>
+                                <ul style="margin-left: 1rem; font-size: 0.95rem; color: var(--text-primary); line-height: 1.5;">
+                                    <li>High-precision sensors (LIDAR, IMU)</li>
+                                    <li>Professional servo motors</li>
+                                    <li>3D printer (Prusa i3, Ender 3)</li>
+                                    <li>Oscilloscope & logic analyzer</li>
+                                    <li>Hot air station for SMD work</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Interactive Budget Calculator -->
+                    <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center; border: 1px solid #E5E7EB;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 1.5rem; font-size: 1.3rem;">💰 Budget Calculator for Your Level</h4>
+                        <div class="grid grid-3" style="gap: 1.5rem;">
+                            <div style="padding: 1.5rem; background: #f0fdf4; border-radius: var(--radius-md); border: 2px solid #059669;">
+                                <h5 style="color: #059669; font-size: 1.1rem; margin-bottom: 0.5rem;">Beginner Budget</h5>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #059669; margin-bottom: 0.5rem;">₹8,000-12,000</div>
+                                <p style="font-size: 1rem; color: var(--text-secondary);">Arduino + Pi + essential sensors</p>
+                            </div>
+                            <div style="padding: 1.5rem; background: #fffbeb; border-radius: var(--radius-md); border: 2px solid #DC6317;">
+                                <h5 style="color: #DC6317; font-size: 1.1rem; margin-bottom: 0.5rem;">Intermediate Budget</h5>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #DC6317; margin-bottom: 0.5rem;">₹16,000-24,000</div>
+                                <p style="font-size: 1rem; color: var(--text-secondary);">ESP32 + Jetson Nano + cameras</p>
+                            </div>
+                            <div style="padding: 1.5rem; background: #fef2f2; border-radius: var(--radius-md); border: 2px solid #DC2626;">
+                                <h5 style="color: #DC2626; font-size: 1.1rem; margin-bottom: 0.5rem;">Advanced Budget</h5>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #DC2626; margin-bottom: 0.5rem;">₹40,000+</div>
+                                <p style="font-size: 1rem; color: var(--text-secondary);">Professional tools + Jetson Xavier</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced 6-Month Project Roadmap -->
+                <div style="margin-bottom: 4rem; padding: 3rem; background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%); border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); color: white;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: white; font-size: 1.5rem;">
+                        🗺️ Your Complete 6-Month Project Roadmap: Week-by-Week Learning
+                    </h3>
+                    
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: var(--radius-lg); margin-bottom: 2rem; text-align: center;">
+                        <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1.2rem;">Beginner to Advanced Path</h4>
+                        <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="background: #059669; width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                                <span>Green: Beginner (Weeks 1-8)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="background: #DC6317; width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                                <span>Orange: Intermediate (Weeks 9-16)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="background: #DC2626; width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                                <span>Red: Advanced (Weeks 17-24)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-2" style="gap: 2rem;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.2);">
+                            <h4 style="color: #34D399; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem;">
+                                <span style="background: #059669; width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+                                Month 1-2: Foundation Building
+                            </h4>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 1-2: Arduino Fundamentals</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Setup Arduino IDE, first "Hello World" blink</li>
+                                    <li>Digital & analog I/O, serial communication</li>
+                                    <li>Basic sensors: temperature, light, button</li>
+                                    <li><strong>Project:</strong> Smart night light with LDR sensor</li>
+                                </ul>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 3-4: Movement & Control</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Servo motors, PWM control, motor drivers</li>
+                                    <li>Ultrasonic sensor for distance measurement</li>
+                                    <li>Basic robot chassis assembly</li>
+                                    <li><strong>Project:</strong> Obstacle-avoiding robot car</li>
+                                </ul>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 5-6: IoT Introduction</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>ESP32 setup, WiFi connection basics</li>
+                                    <li>DHT22 sensor for temperature/humidity</li>
+                                    <li>Data logging to cloud (ThingSpeak)</li>
+                                    <li><strong>Project:</strong> WiFi weather monitoring station</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 7-8: Mobile Integration</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Blynk app setup, mobile control interface</li>
+                                    <li>Relay control for home appliances</li>
+                                    <li>Real-time notifications and alerts</li>
+                                    <li><strong>Project:</strong> Smart home automation system</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: var(--radius-lg);">
+                            <h4 style="color: #F59E0B; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="background: #F59E0B; width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+                                Month 3-4: Intermediate Integration
+                            </h4>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 9-10: Computer Vision Basics</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Raspberry Pi camera setup, OpenCV installation</li>
+                                    <li>Basic image processing: capture, resize, filter</li>
+                                    <li>Motion detection and face recognition</li>
+                                    <li><strong>Project:</strong> Smart security camera system</li>
+                                </ul>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 11-12: AI Integration</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Jetson Nano setup, TensorFlow Lite models</li>
+                                    <li>Object detection with pre-trained models</li>
+                                    <li>Voice recognition with speech APIs</li>
+                                    <li><strong>Project:</strong> AI-powered smart mirror</li>
+                                </ul>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 13-14: Wireless Communication</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>LoRa, Zigbee, mesh networking protocols</li>
+                                    <li>Drone control systems, telemetry</li>
+                                    <li>RC transmitter integration</li>
+                                    <li><strong>Project:</strong> Long-range drone with FPV</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 15-16: Industrial IoT</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Modbus/CAN protocols, industrial sensors</li>
+                                    <li>SCADA systems, data visualization</li>
+                                    <li>Predictive maintenance algorithms</li>
+                                    <li><strong>Project:</strong> Industrial monitoring dashboard</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: var(--radius-lg);">
+                            <h4 style="color: #EF4444; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="background: #EF4444; width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+                                Month 5-6: Advanced Portfolio Projects
+                            </h4>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 17-18: Autonomous Systems</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>SLAM algorithms, path planning</li>
+                                    <li>Sensor fusion (IMU, GPS, cameras)</li>
+                                    <li>ROS (Robot Operating System) basics</li>
+                                    <li><strong>Project:</strong> Autonomous delivery robot</li>
+                                </ul>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 19-20: Smart City Infrastructure</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Traffic flow analysis, edge computing</li>
+                                    <li>Multi-sensor data fusion</li>
+                                    <li>5G integration, edge AI deployment</li>
+                                    <li><strong>Project:</strong> Smart traffic management system</li>
+                                </ul>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 21-22: Professional Security</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>Advanced AI models, behavior analysis</li>
+                                    <li>Multiple camera coordination</li>
+                                    <li>Cloud integration, alert systems</li>
+                                    <li><strong>Project:</strong> Enterprise security system</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Week 23-24: Portfolio & Documentation</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li>GitHub portfolio creation</li>
+                                    <li>Technical blog writing</li>
+                                    <li>Demo videos and presentations</li>
+                                    <li><strong>Outcome:</strong> Professional project portfolio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: var(--radius-lg);">
+                            <h4 style="color: white; margin-bottom: 1rem;">🛠️ Essential Skills Throughout</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: #10B981; margin-bottom: 0.5rem;">Programming Languages</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li><strong>C++:</strong> Arduino, embedded systems, real-time control</li>
+                                    <li><strong>Python:</strong> Raspberry Pi, AI/ML, data processing</li>
+                                    <li><strong>JavaScript:</strong> Web interfaces, Node.js, IoT dashboards</li>
+                                    <li><strong>SQL:</strong> Database management, data analytics</li>
+                                </ul>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <h5 style="color: #F59E0B; margin-bottom: 0.5rem;">Development Tools</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li><strong>IDEs:</strong> Arduino IDE, PlatformIO, VS Code</li>
+                                    <li><strong>Version Control:</strong> Git, GitHub, collaborative development</li>
+                                    <li><strong>CAD Software:</strong> Fusion 360, KiCad for PCB design</li>
+                                    <li><strong>Simulation:</strong> Gazebo, MATLAB/Simulink</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 style="color: #EF4444; margin-bottom: 0.5rem;">Cloud Platforms</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li><strong>AWS IoT:</strong> Device management, data processing</li>
+                                    <li><strong>Google Cloud:</strong> AI/ML services, computer vision</li>
+                                    <li><strong>Azure IoT:</strong> Enterprise integration, security</li>
+                                    <li><strong>Edge Computing:</strong> Local AI processing, low latency</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Progress Tracking -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.15); border-radius: var(--radius-lg); text-align: center; border: 1px solid rgba(255,255,255,0.2);">
+                        <h4 style="color: white; margin-bottom: 1rem; font-size: 1.2rem;">📊 Track Your Progress</h4>
+                        <p style="color: rgba(255,255,255,0.95); margin-bottom: 1rem; font-size: 1rem;">
+                            Each week builds upon the previous, ensuring you develop both theoretical knowledge and practical skills.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                            <div style="background: #059669; padding: 0.5rem 1rem; border-radius: var(--radius-md);">
+                                <strong>Weeks 1-8:</strong> Foundation
+                            </div>
+                            <div style="background: #DC6317; padding: 0.5rem 1rem; border-radius: var(--radius-md);">
+                                <strong>Weeks 9-16:</strong> Integration
+                            </div>
+                            <div style="background: #DC2626; padding: 0.5rem 1rem; border-radius: var(--radius-md);">
+                                <strong>Weeks 17-24:</strong> Portfolio
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Shopping Lists & Project Ideas -->
+                <div>
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        🛒 Complete Shopping Lists & Project Ideas by Budget
+                    </h3>
+                    
+                    <div class="grid grid-3">
+                        <!-- Starter Kit Enhanced -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); border: 2px solid #059669; box-shadow: 0 8px 25px -5px rgba(5, 150, 105, 0.1);">
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <div style="background: #059669; color: white; padding: 0.75rem; border-radius: var(--radius-md); display: inline-block; margin-bottom: 0.5rem; font-weight: 600;">
+                                    💚 STARTER KIT
+                                </div>
+                                <h4 class="card-title" style="color: #059669; font-size: 1.3rem;">₹8,000-12,000 Budget</h4>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #047857; margin-bottom: 0.75rem; font-size: 1.1rem;">🔧 Essential Hardware</h5>
+                                <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                                    <li>Arduino Uno R3 + USB cable (₹2,000)</li>
+                                    <li>Breadboard (830 tie-points) (₹400)</li>
+                                    <li>Jumper wires set (M-M, M-F, F-F) (₹800)</li>
+                                    <li>LEDs assorted colors (50pcs) + resistors (₹650)</li>
+                                    <li>Raspberry Pi 4 (4GB) starter kit (₹6,000)</li>
+                                    <li>MicroSD card 32GB + card reader (₹1,000)</li>
+                                    <li>Basic sensor kit (DHT22, HC-SR04, PIR) (₹1,200)</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #047857; margin-bottom: 0.75rem; font-size: 1.1rem;">📚 Learning Resources</h5>
+                                <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                                    <li>Arduino programming book</li>
+                                    <li>Access to online courses (Coursera/Udemy)</li>
+                                    <li>Community forums (Arduino.cc, Reddit)</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: #ecfdf5; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid #a7f3d0;">
+                                <h5 style="color: #047857; margin-bottom: 0.75rem; font-size: 1rem;">🚀 Project Ideas (Simple LED to Smart Devices)</h5>
+                                <ul style="margin-left: 1rem; font-size: 0.9rem; color: var(--text-primary); line-height: 1.5;">
+                                    <li><strong>Week 1-2:</strong> LED patterns, traffic light simulator</li>
+                                    <li><strong>Week 3-4:</strong> Temperature alarm system</li>
+                                    <li><strong>Week 5-6:</strong> Motion-activated night light</li>
+                                    <li><strong>Week 7-8:</strong> Smart plant watering with moisture sensor</li>
+                                    <li><strong>Bonus:</strong> Home security motion detector</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Intermediate Kit Enhanced -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 2px solid #DC6317; box-shadow: 0 8px 25px -5px rgba(220, 99, 23, 0.1);">
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <div style="background: #DC6317; color: white; padding: 0.75rem; border-radius: var(--radius-md); display: inline-block; margin-bottom: 0.5rem; font-weight: 600;">
+                                    💛 INTERMEDIATE KIT
+                                </div>
+                                <h4 class="card-title" style="color: #DC6317; font-size: 1.3rem;">₹16,000-24,000 Budget</h4>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #B45309; margin-bottom: 0.75rem; font-size: 1.1rem;">🔧 Advanced Hardware</h5>
+                                <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                                    <li>ESP32 DevKit V1 + breadboard (₹1,600)</li>
+                                    <li>Jetson Nano 4GB Developer Kit (₹12,000)</li>
+                                    <li>Camera module OV5640 + ribbon cable (₹2,000)</li>
+                                    <li>Stepper motors (NEMA17) + drivers (₹2,400)</li>
+                                    <li>Servo motors (SG90, MG996R) (₹1,200)</li>
+                                    <li>LCD displays (16x2, OLED 128x64) (₹1,600)</li>
+                                    <li>WiFi antenna + range extender (₹1,200)</li>
+                                    <li>Power supplies (5V/3A, 12V/2A) (₹2,000)</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #B45309; margin-bottom: 0.75rem; font-size: 1.1rem;">🛠️ Tools & Accessories</h5>
+                                <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                                    <li>Soldering iron kit with accessories</li>
+                                    <li>Digital multimeter</li>
+                                    <li>3D printer filament (PLA/PETG)</li>
+                                    <li>PCB prototyping boards</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: #fef3c7; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid #fbbf24;">
+                                <h5 style="color: #B45309; margin-bottom: 0.75rem; font-size: 1rem;">🚀 Project Ideas (Wireless IoT to AI Vision)</h5>
+                                <ul style="margin-left: 1rem; font-size: 0.9rem; color: var(--text-primary); line-height: 1.5;">
+                                    <li><strong>Month 1:</strong> WiFi weather station with app control</li>
+                                    <li><strong>Month 2:</strong> Smart doorbell with face recognition</li>
+                                    <li><strong>Month 3:</strong> Autonomous robot with obstacle avoidance</li>
+                                    <li><strong>Month 4:</strong> IoT home automation (lights, fan, AC)</li>
+                                    <li><strong>Bonus:</strong> Voice-controlled assistant with AI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Professional Kit Enhanced -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%); border: 2px solid #DC2626; box-shadow: 0 8px 25px -5px rgba(220, 38, 38, 0.1);">
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <div style="background: #DC2626; color: white; padding: 0.75rem; border-radius: var(--radius-md); display: inline-block; margin-bottom: 0.5rem; font-weight: 600;">
+                                    ❤️ PROFESSIONAL KIT
+                                </div>
+                                <h4 class="card-title" style="color: #DC2626; font-size: 1.3rem;">₹40,000+ Budget</h4>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #B91C1C; margin-bottom: 0.75rem; font-size: 1.1rem;">🔧 Professional Hardware</h5>
+                                <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                                    <li>Jetson Xavier NX Developer Kit (₹32,000)</li>
+                                    <li>LIDAR sensor (RPLidar A1M8) (₹8,000)</li>
+                                    <li>High-precision IMU (MPU-9250) (₹2,000)</li>
+                                    <li>Professional servo motors (Dynamixel) (₹12,000)</li>
+                                    <li>Industrial camera (Sony IMX477) (₹4,000)</li>
+                                    <li>3D printer (Ender 3 V2 / Prusa i3) (₹20,000)</li>
+                                    <li>Oscilloscope (entry-level DSO) (₹8,000)</li>
+                                    <li>Logic analyzer + function generator (₹6,500)</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #B91C1C; margin-bottom: 0.75rem; font-size: 1.1rem;">🏭 Professional Tools</h5>
+                                <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                                    <li>Hot air station for SMD components</li>
+                                    <li>PCB design software license (Altium/KiCad Pro)</li>
+                                    <li>Professional CAD software (Fusion 360 Pro)</li>
+                                    <li>High-precision power supplies</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: #fecaca; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid #f87171;">
+                                <h5 style="color: #B91C1C; margin-bottom: 0.75rem; font-size: 1rem;">🚀 Project Ideas (Autonomous Drones to Industrial Systems)</h5>
+                                <ul style="margin-left: 1rem; font-size: 0.9rem; color: var(--text-primary); line-height: 1.5;">
+                                    <li><strong>Quarter 1:</strong> Autonomous drone with object tracking</li>
+                                    <li><strong>Quarter 2:</strong> 6-DOF robotic arm with vision system</li>
+                                    <li><strong>Quarter 3:</strong> Industrial IoT monitoring dashboard</li>
+                                    <li><strong>Quarter 4:</strong> Self-balancing robot with AI control</li>
+                                    <li><strong>Capstone:</strong> Smart manufacturing cell prototype</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comprehensive Project Progression -->
+                    <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);">
+                        <h4 style="text-align: center; color: var(--text-primary); margin-bottom: 2rem;">
+                            🎯 Complete Project Progression: From Simple LED Control to Autonomous Drones
+                        </h4>
+                        
+                        <div class="grid grid-4" style="gap: 1rem;">
+                            <div style="text-align: center; padding: 1rem; background: #f0fff4; border-radius: var(--radius-md);">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">💡</div>
+                                <h5 style="color: #10B981; margin-bottom: 0.5rem;">Basic Electronics</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">LED patterns, sensors, basic I/O</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: #fffbeb; border-radius: var(--radius-md);">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
+                                <h5 style="color: #F59E0B; margin-bottom: 0.5rem;">Simple Robotics</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">Motor control, movement, sensors</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: #f3f4f6; border-radius: var(--radius-md);">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📡</div>
+                                <h5 style="color: #6B7280; margin-bottom: 0.5rem;">IoT Integration</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">WiFi, cloud, mobile apps</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: #fef2f2; border-radius: var(--radius-md);">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚁</div>
+                                <h5 style="color: #EF4444; margin-bottom: 0.5rem;">Autonomous Systems</h5>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">AI, computer vision, drones</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; text-align: center;">
+                            <p style="color: var(--text-secondary); font-style: italic;">
+                                Each level builds upon the previous, ensuring a smooth learning curve from basic electronics to advanced autonomous systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Section -->
+        <section id="career" class="section fade-in" style="background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Your Future Awaits</div>
+                    <h2 class="section-title">Career Guide & Job Market</h2>
+                    <p class="section-description">
+                        The robotics, mechatronics, and IoT industries are experiencing explosive growth. 
+                        Here's everything you need to know about landing your dream job, salary expectations, 
+                        and the companies actively hiring.
+                    </p>
+                </div>
+
+                <!-- Job Roles and Salaries -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        💰 Job Roles & Salary Expectations (2025)
+                    </h3>
+                    
+                    <div class="grid grid-2" style="gap: 2rem;">
+                        <div class="card fade-in" style="border-left: 4px solid var(--primary-color);">
+                            <h4 class="card-title" style="color: var(--primary-color); font-size: 1.3rem;">🤖 Robotics Engineer</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Entry Level:</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹6,00,000 - ₹7,60,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Mid Level (3-5 years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹7,60,000 - ₹10,40,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Senior Level (5+ years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹10,40,000 - ₹16,00,000</span>
+                                </div>
+                            </div>
+                            <div class="card-description" style="font-size: 1rem; margin-bottom: 1rem;">
+                                <strong>Key Skills:</strong> Robot programming, control systems, computer vision, machine learning, C++/Python
+                            </div>
+                            <div class="card-example" style="background: #eff6ff; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Growth:</strong> +22% job growth projected through 2030 (Much faster than average)
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in" style="border-left: 4px solid var(--secondary-color);">
+                            <h4 class="card-title" style="color: var(--secondary-color); font-size: 1.3rem;">⚙️ Mechatronics Engineer</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Entry Level:</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹5,60,000 - ₹7,00,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Mid Level (3-5 years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹7,00,000 - ₹9,60,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Senior Level (5+ years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹9,60,000 - ₹14,00,000</span>
+                                </div>
+                            </div>
+                            <div class="card-description" style="font-size: 1rem; margin-bottom: 1rem;">
+                                <strong>Key Skills:</strong> System integration, embedded programming, CAD, control theory, electronics
+                            </div>
+                            <div class="card-example" style="background: #ecfeff; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Growth:</strong> +19% job growth projected through 2030 (Much faster than average)
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in" style="border-left: 4px solid var(--warning-color);">
+                            <h4 class="card-title" style="color: var(--warning-color); font-size: 1.3rem;">🌐 IoT Engineer</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Entry Level:</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹6,20,000 - ₹7,80,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Mid Level (3-5 years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹7,80,000 - ₹10,80,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Senior Level (5+ years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹10,80,000 - ₹15,20,000</span>
+                                </div>
+                            </div>
+                            <div class="card-description" style="font-size: 1rem; margin-bottom: 1rem;">
+                                <strong>Key Skills:</strong> Cloud platforms, wireless protocols, data analytics, cybersecurity, JavaScript/Python
+                            </div>
+                            <div class="card-example" style="background: #fffbeb; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Growth:</strong> +25% job growth projected through 2030 (Much faster than average)
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in" style="border-left: 4px solid var(--danger-color);">
+                            <h4 class="card-title" style="color: var(--danger-color); font-size: 1.3rem;">🧠 AI/ML Engineer (Robotics)</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Entry Level:</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹6,80,000 - ₹8,80,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Mid Level (3-5 years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹8,80,000 - ₹12,80,000</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; padding: 0.5rem; background: #f8fafc; border-radius: 6px;">
+                                    <span style="font-weight: 600;"><strong>Senior Level (5+ years):</strong></span>
+                                    <span style="color: var(--success-color); font-weight: bold; font-size: 1.1rem;">₹12,80,000 - ₹20,00,000</span>
+                                </div>
+                            </div>
+                            <div class="card-description" style="font-size: 1rem; margin-bottom: 1rem;">
+                                <strong>Key Skills:</strong> Deep learning, computer vision, TensorFlow/PyTorch, data science, mathematics
+                            </div>
+                            <div class="card-example" style="background: #fef2f2; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Growth:</strong> +35% job growth projected through 2030 (Much faster than average)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Companies Hiring -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        🏢 Top Companies Actively Hiring
+                    </h3>
+                    
+                    <div class="grid grid-3">
+                        <div class="card fade-in">
+                            <h4 class="card-title" style="color: var(--primary-color);">🚗 Automotive & Transportation</h4>
+                            <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                <li><strong>Tesla</strong> - Autonomous driving, robotics</li>
+                                <li><strong>Ford</strong> - Manufacturing automation</li>
+                                <li><strong>General Motors</strong> - Connected vehicles</li>
+                                <li><strong>Waymo</strong> - Self-driving technology</li>
+                                <li><strong>Rivian</strong> - Electric vehicle systems</li>
+                                <li><strong>Aurora</strong> - Autonomous trucking</li>
+                            </ul>
+                            <div class="card-example" style="background: #eff6ff; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Average Salary Range:</strong> ₹7,60,000 - ₹14,40,000
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <h4 class="card-title" style="color: var(--secondary-color);">🤖 Robotics & Automation</h4>
+                            <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                <li><strong>Boston Dynamics</strong> - Advanced robotics</li>
+                                <li><strong>ABB</strong> - Industrial automation</li>
+                                <li><strong>KUKA</strong> - Manufacturing robots</li>
+                                <li><strong>iRobot</strong> - Consumer robotics</li>
+                                <li><strong>Intuitive Surgical</strong> - Medical robots</li>
+                                <li><strong>Fanuc</strong> - Factory automation</li>
+                            </ul>
+                            <div class="card-example" style="background: #ecfeff; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Average Salary Range:</strong> ₹6,80,000 - ₹13,20,000
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <h4 class="card-title" style="color: var(--warning-color);">☁️ Tech Giants & IoT</h4>
+                            <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                <li><strong>Amazon</strong> - AWS IoT, warehouse robotics</li>
+                                <li><strong>Google</strong> - Nest, Cloud IoT</li>
+                                <li><strong>Microsoft</strong> - Azure IoT, mixed reality</li>
+                                <li><strong>Apple</strong> - HomeKit, wearables</li>
+                                <li><strong>Meta</strong> - VR/AR, smart devices</li>
+                                <li><strong>Intel</strong> - Edge computing, chips</li>
+                            </ul>
+                            <div class="card-example" style="background: #fffbeb; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Average Salary Range:</strong> ₹9,60,000 - ₹17,60,000
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <h4 class="card-title" style="color: var(--success-color);">🏭 Manufacturing & Industrial</h4>
+                            <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                <li><strong>Siemens</strong> - Smart manufacturing</li>
+                                <li><strong>GE</strong> - Industrial IoT, Predix</li>
+                                <li><strong>Honeywell</strong> - Process automation</li>
+                                <li><strong>Rockwell Automation</strong> - Factory systems</li>
+                                <li><strong>Schneider Electric</strong> - Energy management</li>
+                                <li><strong>Emerson</strong> - Process control</li>
+                            </ul>
+                            <div class="card-example" style="background: #f0fdf4; padding: 0.75rem; border-radius: 6px;">
+                                <strong>Average Salary Range:</strong> ₹6,00,000 - ₹12,00,000
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <h4 class="card-title" style="color: var(--danger-color);">🚀 Aerospace & Defense</h4>
+                            <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                <li><strong>SpaceX</strong> - Space robotics, automation</li>
+                                <li><strong>Blue Origin</strong> - Spacecraft systems</li>
+                                <li><strong>Lockheed Martin</strong> - Defense robotics</li>
+                                <li><strong>Boeing</strong> - Autonomous systems</li>
+                                <li><strong>Northrop Grumman</strong> - UAVs, satellites</li>
+                                <li><strong>Raytheon</strong> - Military robotics</li>
+                            </ul>
+                            <div class="card-example">
+                                <strong>Average Salary Range:</strong> $90,000 - $175,000
+                            </div>
+                        </div>
+                        
+                        <div class="card fade-in">
+                            <h4 class="card-title" style="color: var(--primary-color);">🏥 Healthcare & Biotech</h4>
+                            <ul style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                <li><strong>Medtronic</strong> - Medical devices</li>
+                                <li><strong>Philips Healthcare</strong> - Smart health systems</li>
+                                <li><strong>Johnson & Johnson</strong> - Surgical robotics</li>
+                                <li><strong>Stryker</strong> - Robotic surgery</li>
+                                <li><strong>Zimmer Biomet</strong> - Orthopedic robotics</li>
+                                <li><strong>Ginkgo Bioworks</strong> - Lab automation</li>
+                            </ul>
+                            <div class="card-example">
+                                <strong>Average Salary Range:</strong> $80,000 - $160,000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Path Guide -->
+                <div style="margin-bottom: 4rem; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: var(--radius-xl); color: white;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: white;">
+                        🎯 How to Land Your Dream Job
+                    </h3>
+                    
+                    <div class="grid grid-2" style="gap: 2rem;">
+                        <div>
+                            <h4 style="color: white; margin-bottom: 1rem;">📚 Education & Certifications</h4>
+                            <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9);">
+                                <li><strong>Degree Options:</strong> Electrical, Mechanical, Computer Engineering, Computer Science</li>
+                                <li><strong>Hot Certifications:</strong> AWS IoT, Google Cloud AI, Certified Robotics Engineer</li>
+                                <li><strong>Online Courses:</strong> Coursera, edX, Udacity Nanodegrees</li>
+                                <li><strong>Bootcamps:</strong> Lambda School, General Assembly (IoT/Robotics tracks)</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: white; margin-bottom: 1rem;">🛠️ Portfolio Essentials</h4>
+                            <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9);">
+                                <li><strong>GitHub:</strong> 5-10 well-documented projects with clean code</li>
+                                <li><strong>Demo Videos:</strong> Show your projects in action</li>
+                                <li><strong>Technical Blog:</strong> Write about your learning journey</li>
+                                <li><strong>LinkedIn:</strong> Professional profile with project showcases</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: white; margin-bottom: 1rem;">🎯 Job Search Strategy</h4>
+                            <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9);">
+                                <li><strong>Networking:</strong> Join robotics meetups, IEEE, professional groups</li>
+                                <li><strong>Internships:</strong> Summer programs at tech companies</li>
+                                <li><strong>Hackathons:</strong> Participate in robotics/IoT competitions</li>
+                                <li><strong>Job Boards:</strong> AngelList, Built In, company career pages</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: white; margin-bottom: 1rem;">💼 Interview Preparation</h4>
+                            <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9);">
+                                <li><strong>Technical Skills:</strong> Be ready to code live, explain algorithms</li>
+                                <li><strong>System Design:</strong> Practice designing IoT/robotics systems</li>
+                                <li><strong>Project Deep-Dive:</strong> Know your projects inside and out</li>
+                                <li><strong>Behavioral:</strong> Prepare STAR method stories</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Industry Trends & Market Data -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        📈 Industry Trends & Market Data (2025-2030)
+                    </h3>
+                    
+                    <!-- Growth Projections Overview -->
+                    <div style="background: linear-gradient(135deg, #0EA5E9 0%, #06B6D4 100%); padding: 3rem; border-radius: var(--radius-xl); margin-bottom: 3rem; color: white; text-align: center;">
+                        <h4 style="color: white; margin-bottom: 1.5rem; font-size: 1.8rem;">🚀 Explosive Job Growth Through 2030</h4>
+                        <div class="grid grid-3" style="gap: 2rem;">
+                            <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: var(--radius-lg);">
+                                <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">22-35%</div>
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Job Growth Rate</h5>
+                                <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Much faster than average (7% for all occupations)</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: var(--radius-lg);">
+                                <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">2.5M+</div>
+                                <h5 style="color: white; margin-bottom: 0.5rem;">New Jobs Created</h5>
+                                <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Across robotics, IoT, and AI sectors</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: var(--radius-lg);">
+                                <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">$250K+</div>
+                                <h5 style="color: white; margin-bottom: 0.5rem;">Top Salaries</h5>
+                                <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Senior AI/ML Engineers at FAANG companies</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-3">
+                        <!-- Market Sizes -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #f0fff4 0%, #dcfce7 100%); border-left: 5px solid #10B981;">
+                            <div class="card-icon" style="color: #10B981; font-size: 2.5rem;">💰</div>
+                            <h4 class="card-title" style="color: #10B981;">Market Sizes by 2030</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; padding: 0.5rem; background: white; border-radius: var(--radius-sm);">
+                                    <span><strong>Autonomous Vehicles:</strong></span>
+                                    <span style="color: #10B981; font-weight: bold;">$557B</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; padding: 0.5rem; background: white; border-radius: var(--radius-sm);">
+                                    <span><strong>Industrial IoT:</strong></span>
+                                    <span style="color: #10B981; font-weight: bold;">$263B</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; padding: 0.5rem; background: white; border-radius: var(--radius-sm);">
+                                    <span><strong>Service Robotics:</strong></span>
+                                    <span style="color: #10B981; font-weight: bold;">$103B</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; padding: 0.5rem; background: white; border-radius: var(--radius-sm);">
+                                    <span><strong>Smart Cities:</strong></span>
+                                    <span style="color: #10B981; font-weight: bold;">$2.5T</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem; background: white; border-radius: var(--radius-sm);">
+                                    <span><strong>Edge AI Computing:</strong></span>
+                                    <span style="color: #10B981; font-weight: bold;">$59B</span>
+                                </div>
+                            </div>
+                            <div class="card-example" style="background: #dcfce7; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <strong>Investment Growth:</strong> $150B+ venture capital flowing into robotics and IoT annually
+                            </div>
+                        </div>
+                        
+                        <!-- Geographic Hotspots -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border-left: 5px solid #F59E0B;">
+                            <div class="card-icon" style="color: #F59E0B; font-size: 2.5rem;">🌍</div>
+                            <h4 class="card-title" style="color: #F59E0B;">Geographic Hotspots</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="margin-bottom: 1rem; padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #F59E0B; margin-bottom: 0.5rem;">🥇 Silicon Valley, CA</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Highest salaries, most startups, venture capital hub</p>
+                                    <div style="color: #F59E0B; font-weight: bold;">Avg Salary: $140K-$250K</div>
+                                </div>
+                                <div style="margin-bottom: 1rem; padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #F59E0B; margin-bottom: 0.5rem;">🥈 Austin, TX</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Growing tech hub, Tesla Gigafactory, lower cost of living</p>
+                                    <div style="color: #F59E0B; font-weight: bold;">Avg Salary: $95K-$160K</div>
+                                </div>
+                                <div style="margin-bottom: 1rem; padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #F59E0B; margin-bottom: 0.5rem;">🥉 Boston, MA</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">MIT robotics ecosystem, Boston Dynamics, strong universities</p>
+                                    <div style="color: #F59E0B; font-weight: bold;">Avg Salary: $105K-$180K</div>
+                                </div>
+                                <div style="padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #F59E0B; margin-bottom: 0.5rem;">🏆 Seattle, WA</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Amazon, Microsoft HQs, cloud computing leaders</p>
+                                    <div style="color: #F59E0B; font-weight: bold;">Avg Salary: $110K-$190K</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Emerging Skills -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%); border-left: 5px solid #EF4444;">
+                            <div class="card-icon" style="color: #EF4444; font-size: 2.5rem;">⚡</div>
+                            <h4 class="card-title" style="color: #EF4444;">Emerging Skills in High Demand</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="margin-bottom: 1rem; padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #EF4444; margin-bottom: 0.5rem;">🤖 Edge AI & Machine Learning</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Running AI models on edge devices, TensorRT, ONNX optimization</p>
+                                    <div style="color: #EF4444; font-weight: bold;">Salary Premium: +25-40%</div>
+                                </div>
+                                <div style="margin-bottom: 1rem; padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #EF4444; margin-bottom: 0.5rem;">📡 5G Integration & Low Latency</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Ultra-low latency systems, network slicing, real-time applications</p>
+                                    <div style="color: #EF4444; font-weight: bold;">Salary Premium: +20-30%</div>
+                                </div>
+                                <div style="margin-bottom: 1rem; padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #EF4444; margin-bottom: 0.5rem;">🔗 Digital Twins & Simulation</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Virtual system replicas, predictive maintenance, Industry 4.0</p>
+                                    <div style="color: #EF4444; font-weight: bold;">Salary Premium: +15-25%</div>
+                                </div>
+                                <div style="padding: 0.75rem; background: white; border-radius: var(--radius-md);">
+                                    <h5 style="color: #EF4444; margin-bottom: 0.5rem;">🛡️ IoT Cybersecurity</h5>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Securing connected devices, blockchain, privacy protection</p>
+                                    <div style="color: #EF4444; font-weight: bold;">Salary Premium: +30-45%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Future Predictions -->
+                    <div style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: var(--radius-xl); color: white;">
+                        <h4 style="text-align: center; color: white; margin-bottom: 2rem;">🔮 What's Coming Next (2025-2030)</h4>
+                        <div class="grid grid-2" style="gap: 2rem;">
+                            <div>
+                                <h5 style="color: #06B6D4; margin-bottom: 1rem;">🚀 Technology Breakthroughs</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li><strong>Quantum-Enhanced AI:</strong> Exponential speedup for optimization problems</li>
+                                    <li><strong>Brain-Computer Interfaces:</strong> Direct neural control of robotics systems</li>
+                                    <li><strong>Swarm Robotics:</strong> Coordinated multi-robot systems for large-scale tasks</li>
+                                    <li><strong>6G Networks:</strong> Holographic communications, ultra-massive IoT</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 style="color: #06B6D4; margin-bottom: 1rem;">💼 Career Evolution</h5>
+                                <ul style="margin-left: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                                    <li><strong>Human-AI Collaboration:</strong> Engineers working alongside AI assistants</li>
+                                    <li><strong>Specialized Roles:</strong> Robot ethicists, AI safety engineers</li>
+                                    <li><strong>Remote Robotics:</strong> Operating robots from anywhere in the world</li>
+                                    <li><strong>Continuous Learning:</strong> Skills refresh every 2-3 years mandatory</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Career Tools -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">
+                        🛠️ Interactive Career Tools & Guidance
+                    </h3>
+                    
+                    <div class="grid grid-2" style="gap: 2rem;">
+                        <!-- Salary Comparison Tool -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 2px solid #0EA5E9;">
+                            <div style="text-align: center; margin-bottom: 1.5rem;">
+                                <div style="background: #0EA5E9; color: white; padding: 0.75rem; border-radius: var(--radius-md); display: inline-block; margin-bottom: 0.5rem; font-size: 1.2rem;">
+                                    💰 Salary Comparison Tool
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #0EA5E9; margin-bottom: 1rem;">Compare Salaries by Role & Location</h5>
+                                <div style="display: grid; gap: 0.75rem;">
+                                    <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <span><strong>Robotics Engineer (SF):</strong></span>
+                                        <span style="color: #10B981; font-weight: bold;">$160K-$240K</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <span><strong>IoT Engineer (Austin):</strong></span>
+                                        <span style="color: #10B981; font-weight: bold;">$98K-$145K</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <span><strong>AI/ML Engineer (Seattle):</strong></span>
+                                        <span style="color: #10B981; font-weight: bold;">$140K-$220K</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <span><strong>Mechatronics Engineer (Boston):</strong></span>
+                                        <span style="color: #10B981; font-weight: bold;">$110K-$165K</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #e0f2fe; padding: 1rem; border-radius: var(--radius-md);">
+                                <p style="font-size: 0.9rem; color: var(--text-secondary); text-align: center;">
+                                    <strong>💡 Pro Tip:</strong> Salaries vary by company size, benefits package, and stock options. 
+                                    FAANG companies typically offer 20-40% above these ranges.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Company Filtering Tool -->
+                        <div class="card fade-in" style="background: linear-gradient(135deg, #f7fee7 0%, #ecfccb 100%); border: 2px solid #84cc16;">
+                            <div style="text-align: center; margin-bottom: 1.5rem;">
+                                <div style="background: #84cc16; color: white; padding: 0.75rem; border-radius: var(--radius-md); display: inline-block; margin-bottom: 0.5rem; font-size: 1.2rem;">
+                                    🏢 Company Filtering by Industry
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: #84cc16; margin-bottom: 1rem;">Find Companies by Your Interest</h5>
+                                <div style="display: grid; gap: 0.75rem;">
+                                    <div style="padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <div style="font-weight: bold; color: #84cc16; margin-bottom: 0.25rem;">🚗 Autonomous Vehicles</div>
+                                        <div style="font-size: 0.85rem; color: var(--text-secondary);">Tesla, Waymo, Cruise, Aurora, Rivian</div>
+                                    </div>
+                                    <div style="padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <div style="font-weight: bold; color: #84cc16; margin-bottom: 0.25rem;">🤖 Service Robotics</div>
+                                        <div style="font-size: 0.85rem; color: var(--text-secondary);">Boston Dynamics, iRobot, Agility, Fetch</div>
+                                    </div>
+                                    <div style="padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <div style="font-weight: bold; color: #84cc16; margin-bottom: 0.25rem;">☁️ Cloud & IoT</div>
+                                        <div style="font-size: 0.85rem; color: var(--text-secondary);">Amazon (AWS), Google Cloud, Microsoft Azure</div>
+                                    </div>
+                                    <div style="padding: 0.75rem; background: white; border-radius: var(--radius-md); border: 1px solid #e2e8f0;">
+                                        <div style="font-weight: bold; color: #84cc16; margin-bottom: 0.25rem;">🏥 Healthcare Tech</div>
+                                        <div style="font-size: 0.85rem; color: var(--text-secondary);">Medtronic, Philips, J&J, Intuitive Surgical</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #ecfccb; padding: 1rem; border-radius: var(--radius-md);">
+                                <p style="font-size: 0.9rem; color: var(--text-secondary); text-align: center;">
+                                    <strong>🎯 Strategy:</strong> Focus on 2-3 industries that align with your interests and 
+                                    tailor your portfolio projects accordingly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Career Guidance Modals Info -->
+                    <div style="margin-top: 2rem; padding: 2rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 1rem;">💡 Career Guidance & Networking Tips</h4>
+                        <div class="grid grid-3" style="gap: 1.5rem;">
+                            <div style="padding: 1rem; background: #f8fafc; border-radius: var(--radius-md);">
+                                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🤝</div>
+                                <h5 style="color: var(--primary-color); margin-bottom: 0.5rem;">Networking</h5>
+                                <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                                    Join IEEE Robotics Society, attend ROS meetups, participate in ICRA/IROS conferences
+                                </p>
+                            </div>
+                            <div style="padding: 1rem; background: #f8fafc; border-radius: var(--radius-md);">
+                                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💼</div>
+                                <h5 style="color: var(--primary-color); margin-bottom: 0.5rem;">Interview Prep</h5>
+                                <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                                    Practice system design, algorithm coding, and be ready to demo your projects live
+                                </p>
+                            </div>
+                            <div style="padding: 1rem; background: #f8fafc; border-radius: var(--radius-md);">
+                                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📈</div>
+                                <h5 style="color: var(--primary-color); margin-bottom: 0.5rem;">Skills Development</h5>
+                                <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                                    Focus on C++/Python, cloud platforms, and get certified in AWS IoT or Google Cloud AI
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Highlights Summary Section -->
+        <section id="career-highlights" class="section" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: white;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle" style="color: rgba(255,255,255,0.8);">Your Complete Career Overview</div>
+                    <h2 class="section-title" style="color: white;">💼 Career Highlights & Essential Information</h2>
+                    <p class="section-description" style="color: rgba(255,255,255,0.9);">
+                        Everything you need to know about building a successful career in robotics, mechatronics, and IoT - 
+                        from entry-level positions to senior executive roles.
+                    </p>
+                </div>
+
+                <!-- Key Statistics -->
+                <div style="margin-bottom: 4rem;">
+                    <div class="grid grid-4" style="gap: 2rem;">
+                        <div class="stat-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-top-color: #10B981;">
+                            <div class="stat-number" style="color: #10B981;">$70K-85K</div>
+                            <div class="stat-label" style="color: white;">Entry-Level Salaries</div>
+                            <div class="stat-description" style="color: rgba(255,255,255,0.8);">Starting salaries across all roles</div>
+                        </div>
+                        <div class="stat-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-top-color: #F59E0B;">
+                            <div class="stat-number" style="color: #F59E0B;">$175K-250K</div>
+                            <div class="stat-label" style="color: white;">Senior Positions</div>
+                            <div class="stat-description" style="color: rgba(255,255,255,0.8);">Peak earning potential</div>
+                        </div>
+                        <div class="stat-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-top-color: #06B6D4;">
+                            <div class="stat-number" style="color: #06B6D4;">22-35%</div>
+                            <div class="stat-label" style="color: white;">Growth Rate</div>
+                            <div class="stat-description" style="color: rgba(255,255,255,0.8);">Job growth through 2030</div>
+                        </div>
+                        <div class="stat-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-top-color: #EF4444;">
+                            <div class="stat-number" style="color: #EF4444;">2.5M+</div>
+                            <div class="stat-label" style="color: white;">New Jobs</div>
+                            <div class="stat-description" style="color: rgba(255,255,255,0.8);">Jobs created by 2030</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div style="text-align: center; padding: 3rem; background: rgba(255,255,255,0.1); border-radius: var(--radius-xl); backdrop-filter: blur(20px);">
+                    <h3 style="color: white; margin-bottom: 1rem;">🎯 Ready to Start Your Journey?</h3>
+                    <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        The future of technology is in your hands. Start with the beginner projects, 
+                        follow the 6-month roadmap, and build the skills that will land you a $100K+ job in this exciting field.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#getting-started" style="background: linear-gradient(135deg, #10B981, #059669); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
+                            Start Building Projects 🚀
+                        </a>
+                        <a href="#career" style="background: transparent; color: white; border: 2px solid white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
+                            Explore Career Paths 💼
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section id="quiz" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Knowledge Check</div>
+                    <h2 class="section-title">Test Your Understanding</h2>
+                    <p class="section-description">
+                        Let's see how well you've absorbed the key concepts from our session!
+                    </p>
+                </div>
+
+                <div class="grid grid-2" style="gap: 3rem;">
+                    <!-- Quiz 1 -->
+                    <div class="quiz card">
+                        <h4 style="margin-bottom: 1rem; color: var(--text-primary);">
+                            Which is NOT part of the basic robot framework?
+                        </h4>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div class="quiz-option poll-option" data-correct="false">Sense</div>
+                            <div class="quiz-option poll-option" data-correct="false">Plan</div>
+                            <div class="quiz-option poll-option" data-correct="false">Act</div>
+                            <div class="quiz-option poll-option" data-correct="true">Connect</div>
+                        </div>
+                        <div class="quiz-result" style="display: none; margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);"></div>
+                    </div>
+
+                    <!-- Quiz 2 -->
+                    <div class="quiz card">
+                        <h4 style="margin-bottom: 1rem; color: var(--text-primary);">
+                            What does IoT primarily enable?
+                        </h4>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div class="quiz-option poll-option" data-correct="false">Faster processing</div>
+                            <div class="quiz-option poll-option" data-correct="true">Device connectivity and data sharing</div>
+                            <div class="quiz-option poll-option" data-correct="false">Better graphics</div>
+                            <div class="quiz-option poll-option" data-correct="false">Wireless charging</div>
+                        </div>
+                        <div class="quiz-result" style="display: none; margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);"></div>
+                    </div>
+
+                    <!-- Quiz 3 -->
+                    <div class="quiz card">
+                        <h4 style="margin-bottom: 1rem; color: var(--text-primary);">
+                            Mechatronics combines which fields?
+                        </h4>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div class="quiz-option poll-option" data-correct="true">Mechanical, Electrical, Software, Control</div>
+                            <div class="quiz-option poll-option" data-correct="false">Physics, Chemistry, Biology</div>
+                            <div class="quiz-option poll-option" data-correct="false">Art, Music, Literature</div>
+                            <div class="quiz-option poll-option" data-correct="false">Economics, Politics, History</div>
+                        </div>
+                        <div class="quiz-result" style="display: none; margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);"></div>
+                    </div>
+
+                    <!-- Quiz 4 -->
+                    <div class="quiz card">
+                        <h4 style="margin-bottom: 1rem; color: var(--text-primary);">
+                            Which best describes the relationship between these three fields?
+                        </h4>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div class="quiz-option poll-option" data-correct="false">They compete with each other</div>
+                            <div class="quiz-option poll-option" data-correct="false">They are completely separate</div>
+                            <div class="quiz-option poll-option" data-correct="true">They work together synergistically</div>
+                            <div class="quiz-option poll-option" data-correct="false">One will replace the others</div>
+                        </div>
+                        <div class="quiz-result" style="display: none; margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section" style="background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Continue Learning</div>
+                    <h2 class="section-title">Resources for Further Exploration</h2>
+                    <p class="section-description">
+                        Ready to dive deeper? Here are curated resources to continue your journey 
+                        in robotics, mechatronics, and IoT.
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card fade-in">
+                        <div class="card-icon">📚</div>
+                        <h4 class="card-title">Online Courses</h4>
+                        <div class="card-description">
+                            <ul style="margin-left: 1rem; color: var(--text-secondary);">
+                                <li>Coursera: Introduction to Robotics</li>
+                                <li>edX: IoT Fundamentals</li>
+                                <li>MIT OpenCourseWare: Mechatronics</li>
+                                <li>Udacity: Robotics Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">🎥</div>
+                        <h4 class="card-title">YouTube Channels</h4>
+                        <div class="card-description">
+                            <ul style="margin-left: 1rem; color: var(--text-secondary);">
+                                <li>Mark Rober (Engineering projects)</li>
+                                <li>Boston Dynamics (Robot demos)</li>
+                                <li>MIT CSAIL (Research insights)</li>
+                                <li>Andreas Spiess (IoT tutorials)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">🔧</div>
+                        <h4 class="card-title">Hands-On Projects</h4>
+                        <div class="card-description">
+                            <ul style="margin-left: 1rem; color: var(--text-secondary);">
+                                <li>Arduino starter kits</li>
+                                <li>Raspberry Pi IoT projects</li>
+                                <li>LEGO Mindstorms robotics</li>
+                                <li>ROS (Robot Operating System)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>🎉 Session Complete!</h3>
+            <p style="margin-bottom: 1rem;">
+                Congratulations! You've explored the fascinating worlds of Robotics, Mechatronics, and IoT.
+            </p>
+            <p style="margin-bottom: 2rem;">
+                <strong>Key Takeaways:</strong> These three fields work together to create the smart, 
+                connected world around us. From robots that sense-plan-act, to mechatronic systems 
+                that integrate multiple engineering disciplines, to IoT networks that connect everything—
+                the future is being built today.
+            </p>
+            
+            <div class="footer-links">
+                <a href="#welcome" class="footer-link">Back to Top</a>
+                <a href="#getting-started" class="footer-link">Start Building</a>
+                <a href="#career" class="footer-link">Career Guide</a>
+                <a href="#career-highlights" class="footer-link">Career Highlights</a>
+                <a href="#quiz" class="footer-link">Take Quiz</a>
+                <a href="#resources" class="footer-link">Resources</a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.7;">
+                Thank you for joining this interactive learning experience! 
+                Continue exploring, building, and shaping the future.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
